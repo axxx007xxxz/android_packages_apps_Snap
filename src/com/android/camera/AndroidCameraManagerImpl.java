@@ -383,14 +383,6 @@ class AndroidCameraManagerImpl implements CameraManager {
                         mCamera.sendHistogramData();
                         break;
 
-                    case SET_LONGSHOT:
-                        mCamera.setLongshot((Boolean) msg.obj);
-                        break;
-
-                    case STOP_LONGSHOT:
-                        mCamera.stopLongshot();
-                        break;
-
                     case SET_AUTO_HDR_MODE:
                         mCamera.setMetadataCb((CameraMetaDataCallback) msg.obj);
                         break;
